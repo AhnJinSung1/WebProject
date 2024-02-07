@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hobby</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        
+        .head {
+            background-color: lightslategray;
+            text-align: center;
+            padding: 30px;
+        }
+
+        #list li, #list2 li {
+            margin: 10px;
+            font-size: 1.2em;
+        }
+
+        #list img{
+            width: 50%;
+            max-width: 50%;
+            height: auto;
+            margin-top: 10px;
+        }
+
+        section {
+            width: 90%;
+            padding: 30px;
+            display: flex;
+            flex-flow:inherit
+        }
+
+        #list, #list2 {
+            margin: 20px;
+            background-color:lightgrey;
+            box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 20px;
+        }
+        .btn {
+            background-color: black;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 20px;
+            font-size: 1em;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .btn:hover{
+            background-color: lightblue;
+        }
+    </style>
+    <script>
+        function main() {
+            window.location.href = "main.html";
+        }
+    </script>
+</head>
+
+<body>
+    <h1 class="head">소?소한 취미</h1><br>
+    <button class="btn" onclick="main()">메인으로 가기</button><br><br>
+
+    <section>
+        <div id="list">
+            <li><b>볼링</b></li>
+            <img src="./bowl.jpg" alt="볼링">
+            <p>가족끼리 가끔 갑니다</p>
+            <hr>
+            <br>
+            <li><b>혼코노</b></li><br>
+            <audio src="./aria.mp3" controls="controls"></audio>
+            <img src="./aria2.jpg" alt="김경호">
+            <p>답답하고 뭐가 잘 안되는날 있잖아요! 그럴 때 스트레스 날리려고 종종 갑니다</p>
+            
+        </div>
+
+        <div id="list2">
+            <li><b>게임</b></li>
+            <img src="./goal.gif" alt="갓겜" width="60%">
+            <p>나만운없어...</p>
+            <hr>
+            <br>
+            <li><b>PC 커스터마이징</b></li><br>
+            <img src="./before.png" alt="기존세팅" width="100%">
+            <p>도저히 안되겠다싶어 언더볼팅을 해보기로 결정</p>
+            <p>BIOS에서 해결이 불가능(제조사에서 막음)</p>
+
+            <p>BIOS추출해서 UEFI 변수값 모시깽이...</p>
+            <img src="after.png" alt="언더볼팅 후">
+            <p>온도 잘 내려갔고 쓰로틀링도없고...안정화 성공!!</p>
+        </div>
+    </section>
+</body>
+
+</html>
